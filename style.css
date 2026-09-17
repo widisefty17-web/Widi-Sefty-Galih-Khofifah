@@ -1,44 +1,44 @@
 /* ==========================================================================
-   PORTOFOLIO PRIBADI: WIDI SEFTY GALIH KHPFIFAH (GALIH)
+   PORTOFOLIO PRIBADI: WIDI SEFTY GALIH KHOFIFAH (GALIH)
    Pelajar SMK Negeri Tembarak - Rekayasa Perangkat Lunak (RPL)
-   Palet Warna: Cream, Putih, Cokelat Muda, dan Aksen Sage Green
+   Palet Warna: Modern Tech Indigo, Electric Cyan, Slate, dan Crisp White
    Font: Poppins
    ========================================================================== */
 
 /* --- 1. CSS VARIABLES & DESIGN SYSTEM --- */
 :root {
-  /* Palette Colors */
-  --bg-body: #FAF7F2;          /* Cream lembut utama */
-  --bg-alt: #F3ECE1;           /* Cream sekunder untuk kontras section */
-  --bg-card: #FFFFFF;          /* Putih bersih untuk kartu */
-  --bg-glass: rgba(250, 247, 242, 0.92);
-  --bg-glass-modal: rgba(45, 36, 28, 0.55);
+  /* Palette Colors - Modern Tech Indigo & Cyan */
+  --bg-body: #F8FAFC;          /* Clean ultra-light slate/ice background */
+  --bg-alt: #F1F5F9;           /* Sophisticated light slate for section contrast */
+  --bg-card: #FFFFFF;          /* Pure crisp white for cards */
+  --bg-glass: rgba(248, 250, 252, 0.90);
+  --bg-glass-modal: rgba(15, 23, 42, 0.65);
 
-  /* Primary Browns (Cokelat Muda & Hangat) */
-  --brown-main: #8C6239;       /* Cokelat muda hangat utama */
-  --brown-dark: #644422;       /* Cokelat tua untuk heading penting */
-  --brown-deep: #3B2818;       /* Teks gelap utama */
-  --brown-light: #C4A482;      /* Cokelat krem aksen */
-  --brown-subtle: #F6EEE3;     /* Background cokelat sangat muda */
+  /* Primary Accent: Vibrant Electric Indigo */
+  --brown-main: #4F46E5;       /* Vibrant Electric Indigo */
+  --brown-dark: #4338CA;       /* Deep Royal Indigo */
+  --brown-deep: #0F172A;       /* Slate 900 */
+  --brown-light: #818CF8;      /* Soft Indigo / Periwinkle */
+  --brown-subtle: #EEF2FF;     /* Indigo 50 (soft energetic background highlight) */
 
-  /* Sage Green Accents (Aksen Hijau Sage) */
-  --sage-main: #5E7E66;        /* Sage green elegan */
-  --sage-dark: #44604B;        /* Sage green gelap untuk hover */
-  --sage-light: #EBF2EC;       /* Sage tint sangat lembut */
-  --sage-border: #C2D5C7;      /* Border sage */
+  /* Secondary Accent: Electric Cyan & Mint Teal */
+  --sage-main: #06B6D4;        /* Electric Cyan */
+  --sage-dark: #0891B2;        /* Deep Cyan */
+  --sage-light: #ECFEFF;       /* Soft Cyan tint */
+  --sage-border: #A5F3FC;      /* Cyan border */
 
   /* Text Colors */
-  --text-title: #38281A;
-  --text-body: #554435;
-  --text-muted: #847262;
-  --text-light: #A39180;
+  --text-title: #0F172A;       /* Deep slate heading (crystal clear contrast) */
+  --text-body: #334155;        /* Slate 700 body text */
+  --text-muted: #64748B;       /* Slate 500 metadata */
+  --text-light: #94A3B8;       /* Slate 400 */
 
   /* Borders & Shadows */
-  --border-card: #EADDC9;
-  --border-subtle: #F0E6D8;
-  --shadow-subtle: 0 4px 16px rgba(90, 65, 45, 0.05);
-  --shadow-medium: 0 10px 30px rgba(90, 65, 45, 0.08);
-  --shadow-hover: 0 18px 40px rgba(90, 65, 45, 0.12);
+  --border-card: #E2E8F0;      /* Crisp light slate border */
+  --border-subtle: #E2E8F0;
+  --shadow-subtle: 0 4px 18px -2px rgba(15, 23, 42, 0.05);
+  --shadow-medium: 0 10px 25px -4px rgba(79, 70, 229, 0.09), 0 6px 12px -4px rgba(15, 23, 42, 0.04);
+  --shadow-hover: 0 20px 35px -6px rgba(79, 70, 229, 0.16), 0 10px 15px -4px rgba(6, 182, 212, 0.08);
 
   /* Radius */
   --radius-xs: 6px;
@@ -178,7 +178,7 @@ button {
 .card:hover {
   box-shadow: var(--shadow-hover);
   transform: translateY(-4px);
-  border-color: #DFCEB8;
+  border-color: rgba(99, 102, 241, 0.35);
 }
 
 /* --- 3. BUTTONS --- */
@@ -198,13 +198,13 @@ button {
 .btn-primary {
   background-color: var(--brown-main);
   color: #FFFFFF;
-  box-shadow: 0 4px 14px rgba(140, 98, 57, 0.28);
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.30);
 }
 
 .btn-primary:hover {
   background-color: var(--brown-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(140, 98, 57, 0.36);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.42);
   color: #FFFFFF;
 }
 
@@ -246,8 +246,8 @@ button {
 }
 
 .site-header.scrolled {
-  box-shadow: 0 4px 20px rgba(90, 65, 45, 0.08);
-  background: rgba(250, 247, 242, 0.96);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  background: rgba(248, 250, 252, 0.96);
 }
 
 .header-container {
@@ -274,7 +274,7 @@ button {
   font-weight: 700;
   font-size: 18px;
   border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(140, 98, 57, 0.25);
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.32);
 }
 
 .logo-text {
@@ -307,13 +307,13 @@ button {
 
 .nav-link:hover {
   color: var(--brown-main);
-  background-color: rgba(140, 98, 57, 0.08);
+  background-color: rgba(79, 70, 229, 0.08);
 }
 
 .nav-link.active {
   color: var(--brown-main);
   font-weight: 600;
-  background-color: rgba(140, 98, 57, 0.12);
+  background-color: rgba(79, 70, 229, 0.12);
 }
 
 /* Mobile Toggle */
@@ -445,7 +445,10 @@ button {
 }
 
 .highlight-name {
-  color: var(--brown-main);
+  background: linear-gradient(135deg, #4F46E5 0%, #06B6D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
   position: relative;
 }
 
@@ -567,7 +570,7 @@ button {
   right: -20px;
   width: 120px;
   height: 120px;
-  background: radial-gradient(circle, var(--sage-light) 0%, rgba(235, 242, 236, 0) 70%);
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.22) 0%, rgba(6, 182, 212, 0) 70%);
   border-radius: 50%;
   z-index: 0;
 }
@@ -578,7 +581,7 @@ button {
   left: -20px;
   width: 130px;
   height: 130px;
-  background: radial-gradient(circle, var(--brown-subtle) 0%, rgba(246, 238, 227, 0) 70%);
+  background: radial-gradient(circle, rgba(79, 70, 229, 0.20) 0%, rgba(79, 70, 229, 0) 70%);
   border-radius: 20px;
   z-index: 0;
 }
@@ -764,7 +767,7 @@ button {
   right: 18px;
   width: 32px;
   height: 32px;
-  color: rgba(94, 126, 102, 0.16);
+  color: rgba(6, 182, 212, 0.22);
 }
 
 .quote-text {
@@ -825,7 +828,7 @@ button {
   background: linear-gradient(135deg, var(--brown-main), var(--sage-main));
   color: #FFFFFF;
   border-radius: 50%;
-  box-shadow: 0 4px 14px rgba(94, 126, 102, 0.35);
+  box-shadow: 0 4px 14px rgba(6, 182, 212, 0.38);
 }
 
 .marker-dot svg {
@@ -1107,8 +1110,8 @@ button {
 }
 
 .cream-tone {
-  background: #FDF4E7;
-  color: #B27B3D;
+  background: #F5F3FF;
+  color: #7C3AED;
 }
 
 .personality-badge {
@@ -1171,7 +1174,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(140, 98, 57, 0.3);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.32);
 }
 
 .exp-icon-dot svg {
@@ -1181,7 +1184,7 @@ button {
 
 .sage-dot {
   background: var(--sage-main);
-  box-shadow: 0 4px 12px rgba(94, 126, 102, 0.3);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.35);
 }
 
 .exp-card {
@@ -1322,7 +1325,7 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  background: rgba(45, 36, 28, 0.85);
+  background: rgba(15, 23, 42, 0.85);
   backdrop-filter: blur(6px);
   color: #FFFFFF;
   padding: 5px 14px;
@@ -1530,9 +1533,9 @@ button {
 .kitchen-bubble.brown-bg svg { color: var(--brown-dark); }
 
 .kitchen-bubble.cream-bg {
-  background: #FBF4EA;
+  background: #F0FDF4;
 }
-.kitchen-bubble.cream-bg svg { color: #A66E38; }
+.kitchen-bubble.cream-bg svg { color: #10B981; }
 
 .cooking-badge-wrap {
   margin-bottom: 12px;
@@ -1813,7 +1816,7 @@ button {
   align-items: center;
   gap: 16px;
   padding: 10px 18px;
-  background: #EFE6D8;
+  background: #E2E8F0;
   border-bottom: 1px solid var(--border-card);
 }
 
@@ -1990,10 +1993,13 @@ button {
 
 /* --- 14. FOOTER --- */
 .site-footer {
-  background-color: #2D2319;
-  color: #EDE2D3;
+  background-color: #0F172A;
+  color: #E2E8F0;
   padding: 50px 0 35px 0;
-  border-top: 4px solid var(--brown-main);
+  border-top: 3px solid transparent;
+  background-image: linear-gradient(#0F172A, #0F172A), linear-gradient(90deg, #4F46E5, #06B6D4);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 .footer-container {
@@ -2022,7 +2028,7 @@ button {
 
 .footer-meta {
   font-size: 14.5px;
-  color: #BDB0A0;
+  color: #94A3B8;
   margin-bottom: 22px;
 }
 
@@ -2040,7 +2046,7 @@ button {
 
 .footer-copyright {
   font-size: 13px;
-  color: #9E9182;
+  color: #64748B;
 }
 
 /* --- 15. SCROLL REVEAL ANIMATIONS --- */
